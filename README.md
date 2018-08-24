@@ -2,10 +2,6 @@
 docker上一键部署lnmp。具体步骤可到[我的简书](https://www.jianshu.com/p/d04e00d0bf8d)查看
 Docker deploying Nginx MySQL PHP7 in one key, support full feature functions.
 
-如果连接不上mysql:
-ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';//navcat 可用
-ALTER USER 'root'@'%' IDENTIFIED WITH caching_sha2_password BY '123456';//程序可用
-
 ## [](https://github.com/shmilylbelva/dnmp#1-feature)1\. Feature
 
 1.  完全开源
@@ -65,5 +61,12 @@ Then you can visit from browser.
 We can identify log directory in nginx / php / php-fpm / mysql config file. To display the log file in host
 
 ## [](https://github.com/yeszao/dnmp#6-license)6\. License
+
+## [](https://github.com/yeszao/dnmp#)7\. MySQL And Navicat
+
+解决连接不上mysql与navicat:
+
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';//navcat 可用
+ALTER USER 'root'@'%' IDENTIFIED WITH caching_sha2_password BY '123456';//程序可用
 
 MIT
